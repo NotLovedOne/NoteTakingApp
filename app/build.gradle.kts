@@ -69,23 +69,23 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     //realm dependency
-    implementation("io.realm.kotlin:library-base:1.11.0")
+    implementation(libs.library.base)
 
     // Navigation Component
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
-    implementation ("androidx.navigation:navigation-compose:2.7.7")
-    implementation ("androidx.navigation:navigation-common-ktx:2.7.7")
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation (libs.androidx.navigation.compose)
+    implementation (libs.androidx.navigation.common.ktx)
 
 // Lifecycle components
-    implementation("androidx.lifecycle:lifecycle-common-java8:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation("androidx.compose.runtime:runtime:1.6.4")
-    implementation("androidx.compose.runtime:runtime-livedata:1.6.4")
-    implementation("androidx.compose.runtime:runtime-rxjava2:1.6.4")
+    implementation(libs.androidx.lifecycle.common.java8)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.runtime)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.runtime.rxjava2)
 
 // Kotlin components
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20")
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    implementation(libs.kotlin.stdlib.jdk7)
+    api(libs.kotlinx.coroutines.core)
+    api(libs.kotlinx.coroutines.android)
 }
